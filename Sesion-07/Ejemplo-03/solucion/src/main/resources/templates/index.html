@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registro</title>
+</head>
+<body>
+
+
+<form th:action="@{/registro}" th:object="${usuario}" method="post">
+    <div th:if="${#fields.hasAnyErrors()}">
+        <ul>
+            <li th:each="err : ${#fields.detailedErrors()}" th:text="${err.getFieldName() + ' ' + err.getMessage() }"/>
+        </ul>
+    </div>
+    <div>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" th:field="*{nombre}">
+    </div>
+    <div>
+        <label for="email">E-Mail: </label>
+        <input id="email" type="email" th:field="*{email}">
+    </div>
+    <div>
+        <label for="username">Usuario: </label>
+        <input id="username" type="text" th:field="*{username}">
+    </div>
+
+    <div>
+        <label for="password">Contraseña: </label>
+        <input id="password" type="password" th:field="*{password}">
+    </div>
+
+    <div>
+        <label for="telefono">Telefono: </label>
+        <input id="telefono" type="text" th:field="*{telefono}">
+    </div>
+
+    <div>
+        <label for="rol">Rol: </label>
+        <select name="rol" id="rol" th:field="*{rol}">
+            <option value="administrador">Administrador</option>
+            <option value="cliente">Cliente</option>
+        </select>
+    </div>
+
+    <input type="submit" th:value="Guardar"/>
+</form>
+</body>
+</html>
