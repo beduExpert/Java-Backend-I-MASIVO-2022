@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registro</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+
+<form th:action="@{/registro}" th:object="${usuario}" method="post">
+    <div>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" th:field="*{nombre}">
+        <div th:if="${#fields.hasErrors('nombre')}" th:errorclass="error" th:errors="*{nombre}"></div>
+    </div>
+    <div>
+        <label for="email">E-Mail: </label>
+        <input id="email" type="email" th:field="*{email}">
+        <div th:if="${#fields.hasErrors('email')}" th:errorclass="error" th:errors="*{email}" ></div>
+    </div>
+    <div>
+        <label for="username">Usuario: </label>
+        <input id="username" type="text" th:field="*{username}">
+        <div th:if="${#fields.hasErrors('username')}" th:errorclass="error" th:errors="*{username}"></div>
+    </div>
+
+    <div>
+        <label for="password">Contraseña: </label>
+        <input id="password" type="password" th:field="*{password}">
+        <div th:if="${#fields.hasErrors('password')}" th:errorclass="error" th:errors="*{password}"></div>
+    </div>
+
+    <div>
+        <label for="telefono">Telefono: </label>
+        <input id="telefono" type="text" th:field="*{telefono}">
+        <div th:if="${#fields.hasErrors('telefono')}" th:errorclass="error" th:errors="*{telefono}" ></div>
+    </div>
+
+    <div>
+        <label for="rol">Rol: </label>
+        <select name="rol" id="rol" th:field="*{rol}">
+            <option value="administrador">Administrador</option>
+            <option value="cliente">Cliente</option>
+        </select>
+        <div th:if="${#fields.hasErrors('rol')}" th:errorclass="error" th:errors="*{rol}"></div>
+    </div>
+
+    <input type="submit" th:value="Guardar"/>
+</form>
+</body>
+</html>

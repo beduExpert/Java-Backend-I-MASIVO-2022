@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <title>Registro</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h2>Introduce un nuevo registro</h2>
+<form th:action="@{/registro}" th:object="${persona}" method="post">
+    <div>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" type="text" th:field="*{nombre}">
+        <div th:if="${#fields.hasErrors('nombre')}" th:errorclass="error" th:errors="*{nombre}"></div>
+    </div>
+    <div>
+        <label for="telefono">Telefono: </label>
+        <input id="telefono" type="text" th:field="*{telefono}">
+        <div th:if="${#fields.hasErrors('telefono')}" th:errorclass="error" th:errors="*{telefono}"></div>
+    </div>
+    <input type="submit" th:value="Guardar"/>
+</form>
+
+<h3>Agenda: </h3>
+
+<ul>
+    <li th:each="registro : ${listaPersonas}" th:text="${ registro.getNombre() + ' ' + registro.getTelefono()}"  ></li>
+</ul>
+</body>
+</html>
