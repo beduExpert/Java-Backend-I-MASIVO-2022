@@ -1,0 +1,11 @@
+plugins {
+  id 'application'
+}
+
+application {
+  mainClass = "Application"
+}
+
+run {
+    standardInput = System.in
+}
