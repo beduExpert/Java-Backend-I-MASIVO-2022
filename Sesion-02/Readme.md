@@ -1,6 +1,6 @@
 ## Sesión 2: Patrones de Diseño :world_map:
 
-<img src=".github/assets/img/patrones.png" align="right" height="120" hspace="10">
+<img src="./img/01.jpg" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart:
@@ -22,7 +22,7 @@ En este módulo aprenderemos:
 
 ---
 
-<img src=".github/assets/img/creational.png" align="right" height="90" hspace="10">
+<img src="./img/02.webp" align="right" height="120" hspace="10">
 
 #### <ins>Tema 1: Patrones creacionales</ins>
 
@@ -32,7 +32,7 @@ Diferentes maneras de crear objetos o grupos de objetos. Sí, todos los objetos 
 
 ---
 
-<img src=".github/assets/img/structural.gif" align="right" height="90" hspace="10">
+<img src="./img/03.jpeg" align="right" height="120" hspace="10">
 
 #### <ins>Tema 2: Patrones estructurales.</ins>
 
@@ -43,7 +43,7 @@ Diferentes formas de crear la estructura de las clases; por ejemplo, usando here
 
 ---
 
-<img src=".github/assets/img/Interpreter-preview.png" align="right" height="90" hspace="10">
+<img src="./img/04.png" align="right" height="120" hspace="10">
 
 
 #### <ins>Tema 3: Patrones de comportamiento.</ins>
