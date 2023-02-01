@@ -49,3 +49,7 @@ Ahora ha llegado el momento de la verdad, ejecutaremos el comando `gradle build`
 ![](img/ejercicio-02-build.png)
 
 Esto quiere decir que el código fue compilado con éxito 😎.
+
+<br>
+
+[**`Siguiente`** -> ejemplo 03](../Ejemplo-03/)

@@ -45,3 +45,7 @@ Teniendo como resultado:
 ![](img/ejercicio-01-hello.png)
 
 ¡Muy bien! Acabamos de ejecutar nuestra primer tarea personalizada de Gradle 🎉🥳🎊
+
+<br>
+
+[**`Siguiente`** -> ejemplo 02](../Ejemplo-02/)

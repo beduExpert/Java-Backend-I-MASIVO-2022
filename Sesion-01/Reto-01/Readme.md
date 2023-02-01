@@ -41,3 +41,7 @@ Crear un programa en Java que convierta un número entero a binario, dicho progr
 
   Así al ejecutar el comando `gradle build` generará el JAR correspondiente.
 </details>
+
+<br>
+
+[**`Siguiente`** -> ejemplo 04](../Ejemplo-04/)

@@ -28,6 +28,20 @@ application {
 }
 ```
 
+A continuación escribiremos nuestro programa en Java, para eso crearemos la siguiente estructura de carpetas:
+
+`src` > `main` > `java`
+
+Después, en la carpeta `java` crearemos un archivo llamado `HelloWorldExample.java` con el siguiente código:
+
+```java
+public class HelloWorldExample {
+  public static void main(String [] args) {
+    System.out.println("Hello from Java");
+  }
+}
+```
+
 Por lo tanto al ejecutar el comando `gradle tasks` podremos ver las tareas disponibles:
 
 ![](img/ejercicio-04-tasks.png)
@@ -35,3 +49,7 @@ Por lo tanto al ejecutar el comando `gradle tasks` podremos ver las tareas dispo
 Finalmente ejecutaremos el comando `gradle run` y veremos el resultado de ejecutar nuestro programa en la terminal:
 
 ![](img/ejercicio-04-run.png)
+
+<br>
+
+[**`Siguiente`** -> reto 02](../Reto-02/)

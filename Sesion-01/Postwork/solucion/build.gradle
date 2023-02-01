@@ -1,3 +1,0 @@
-plugins {
-    id 'org.kordamp.gradle.markdown' version '2.2.0'
-}
