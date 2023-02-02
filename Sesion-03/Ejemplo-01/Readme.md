@@ -103,3 +103,8 @@ Ejecuta la prueba haciendo clic derecho sobre el editor de código y seleccionan
 Debes ver el siguiente resultado en la consola del IDE:
 
 ![imagen](img/img_02.png)
+
+
+<br>
+
+[**`Siguiente`** -> reto 01](../Reto-01/)

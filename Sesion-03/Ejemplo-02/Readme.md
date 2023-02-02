@@ -29,6 +29,8 @@ Lo primero que debemos hacer es incluir las dependencias de JUnit y Mockito en n
 
 ```groovy
 dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    implementation 'org.mockito:mockito-junit-jupiter:4.3.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 
@@ -39,7 +41,6 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
 ```
 
 Como siguiente paso, definimos una interface del DAO que se encargará de leer el valor constante de la base de datos:
@@ -149,3 +150,8 @@ Ejecuta la prueba haciendo clic derecho sobre el editor de código y seleccionan
 Debes ver el siguiente resultado en la consola del IDE:
 
 ![imagen](img/img_02.png)
+
+
+<br>
+
+[**`Siguiente`** -> reto 02](../Reto-02/)

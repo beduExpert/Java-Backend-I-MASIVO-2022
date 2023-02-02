@@ -59,8 +59,8 @@ class CalculadoraTest {
     Stream<DynamicTest> dynamicTestsFromStreamInJava8() {
 
         Calculadora calculadora = new Calculadora();
-        List<Integer> entradas = IntStream.range(0, 1000).boxed().toList();
-        List<Integer> resultados = IntStream.range(0, 1000).map(n -> n * 2).boxed().toList();
+        List<Integer> entradas = IntStream.range(0, 1000).boxed().collect(Collectors.toList());
+        List<Integer> resultados = IntStream.range(0, 1000).map(n -> n * 2).boxed().collect(Collectors.toList());
   
     }
 }  
@@ -77,8 +77,8 @@ class CalculadoraTest {
     Stream<DynamicTest> dynamicTestsFromStreamInJava8() {
 
         Calculadora calculadora = new Calculadora();
-        List<Integer> entradas = IntStream.range(0, 1000).boxed().toList();
-        List<Integer> resultados = IntStream.range(0, 1000).map(n -> n * 2).boxed().toList();
+        List<Integer> entradas = IntStream.range(0, 1000).boxed().collect(Collectors.toList());
+        List<Integer> resultados = IntStream.range(0, 1000).map(n -> n * 2).boxed().collect(Collectors.toList());
         
         return entradas.stream()
                 .map(numero -> DynamicTest.dynamicTest("multiplicando: " + numero,
@@ -94,3 +94,9 @@ Al ejecutar la prueba debes obtener un resultado exitoso y un mensaje indicando 
 ![imagen](img/img_01.png)
 
 </details>
+
+<br>
+
+[**`Siguiente`** -> sesión 04](../../Sesion-04/)
+
+[**`Regresar`**](../)

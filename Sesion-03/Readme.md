@@ -22,7 +22,7 @@ En este módulo aprenderemos:
 
 ---
 
-<img src=".github/assets/img/junit.png" align="right" height="90" hspace="10">
+<img src="./img/01.svg" align="right" height="90" hspace="10">
 
 #### <ins>Tema 1: Pruebas con JUnit</ins>
 
@@ -33,7 +33,7 @@ JUnit es un framework para realizar y automatizar pruebas de aplicaciones Java. 
 
 ---
 
-<img src=".github/assets/img/mockito.jpg" align="right" height="90" hspace="10">
+<img src="./img/02.png" align="right" height="90" hspace="10">
 
 #### <ins>Tema 2: Dobles de pruebas con JUnit y Mockito.</ins>
 
@@ -47,7 +47,7 @@ Esta librería de Java permite simular el comportamiento de una clase de forma d
 
 ---
 
-<img src=".github/assets/img/suite.png" align="right" height="90" hspace="10">
+<img src="./img/03.jpg" align="right" height="90" hspace="10">
 
 #### <ins>Tema 3: Suites de pruebas.</ins>
 

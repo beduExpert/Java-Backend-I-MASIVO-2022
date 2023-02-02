@@ -111,6 +111,25 @@ class CalculadoraMultiplicaTest {
 
 La cuarta para la operación de **división**:
 
+```java
+class CalculadoraDivideTest {
+
+    static Calculadora calculadora;
+
+    @BeforeAll
+    static void setup() {
+        calculadora = new Calculadora();
+    }
+
+    @Test
+    @DisplayName("Prueba division")
+    void divideTest() {
+        int esperado = 9;
+        assertEquals(esperado, calculadora.divide(18, 2));
+    }
+}
+```
+
 Y finalmente la quinta clase. Esta será la que usaremos para crear la suite de pruebas y en la que indicaremos qué clases serán las que incluiremos en el el conjunto. Para eso usaremos una clase que no tendrá ningún contenido y pondremos, además de la anotación `@Suite` que es obligatoria, la anotación `@SelectClasses` en la cual pasaremos como valor un arreglo con todas las clases que queremos que se incluyan en el conjunto de pruebas. Que para este ejemplo son las cuatro que ya hemos creado:
 
 ```java
@@ -131,3 +150,12 @@ Ejecuta la prueba haciendo clic derecho sobre el editor de código y seleccionan
 Debes ver el siguiente resultado en la consola del IDE:
 
 ![imagen](img/img_02.png)
+
+
+<br>
+
+[**`Siguiente`** -> postwork](../Postwork/)
+
+[**`Siguiente`** -> sesión 04](../../Sesion-04/)
+
+[**`Regresar`**](../)

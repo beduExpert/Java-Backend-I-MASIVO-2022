@@ -2,7 +2,7 @@
 
 ### 🎯 OBJETIVO
 
-- Realizar una prueba unitaria que se encargue de validar que al momento de validar una funcionalidad, se lanza la excepción esperada.
+- Realizar una prueba unitaria que se encargue de verificar que al momento de validar una funcionalidad, se lanza la excepción esperada.
 
 ### DESARROLLO
 
@@ -86,3 +86,8 @@ Al ejecutar la prueba anterior debes obtener el siguiente mensaje indicando que 
 
 
 </details>
+
+
+<br>
+
+[**`Siguiente`** -> ejemplo 02](../Ejemplo-02/)
