@@ -2,7 +2,7 @@
 
 ### 🎯 OBJETIVO
 
-- Relizar una serie de pruebas dinámicas usando JUnit 5.
+- Realizar una serie de pruebas dinámicas usando JUnit 5.
 
 ### DESARROLLO
 
