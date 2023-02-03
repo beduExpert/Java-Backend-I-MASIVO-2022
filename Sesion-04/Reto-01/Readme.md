@@ -1,20 +1,21 @@
-## Reto 01: Proyecto Spring Boot desde IntelliJ Idea
+## Reto 01: Controladores con Spring MVC con parámetros
 
 ### OBJETIVO
 
-- Crear un proyecto Maven usando Spring Initializr desde IntelliJ Idea.
-- Compilar, empaquetar y ejecutar la aplicación o proyecto generados desde el IDE.
+- Aprender la forma de crear controladores de Spring usando su módulo web (Spring MVC) y recibir un parámetro.
+- Crear un servicio REST que regrese un recurso dinámico.
+- Consumir el servicio usando un navegador Web y con Postman.
 
 ### DESARROLLO
 
-La ventaja que nos ofrece un Entorno de desarrollo integrado, IDE por sus siglas en inglés, como IntelliJ Idea es que combina en una sola herramienta todas las opciones que necesitamos para la creación de proyectos de cualquier framework que soporte el lenguaje de programación Java. Dentro de esta enorme lista se encuentra Spring Boot que, como viste en el primer ejercicio, permite el desarrollo de aplicaciones web de una forma muy sencilla.
+En el ejemplo anterior creamos un controlador que regresaba un mensaje estático predeterminado, lo que quiere decir que no importa cuantas veces llamemos al recurso siempre recibimos la misma respuesta. 
 
-Spring Initlizr es un sitio que nos permite la creación de un proyecto Spring Boot usando Maven o Gradle como herramientas de construcción del proyecto. Además de que permite la selección de la dependencias del mismo y se encarga de configurarlas para que en cuestión de segundos podamos tener el esqueleto funcional de una aplicación.
-
-En este reto tendrás que crear una aplicación sencilla desde el entorno de desarrollo integrado. No es necesario agregar ninguna funcionalidad inicial, ya que lo que queremos comprobar es que la aplicación está bien configurada y puede ejecutarse de forma exitosa. Para comprobar esto, deberas ver una pantalla como la siguiente al momento de ingresar a la URL: http://localhost:8080
+En este reto tendrás que modificar el controlador creado en el ejemplo anterior para que reciba un parámetro que interpretará como el nombre de la persona a la que estamos saludando. El objetivo es poder saludar a un usuario usando su nombre, por lo que la salida deberá ser similar a la siguiente:
 
 ![imagen](img/img_01.png)
 
+
+Deberás validar el correcto funcionamiento de la aplicación usando la herramienta Postman y desde el navegador.
 
 ¡Buena suerte!
 
@@ -22,66 +23,118 @@ En este reto tendrás que crear una aplicación sencilla desde el entorno de des
 <details>
   <summary>Solución</summary>
 
-Abre el IDE IntelliJ Idea. Crea un nuevo proyecto usando el menú `New -> Project`. 
+Lo primero es crear un proyecto usando Spring Initializr. Selecciona las siguientes opciones:
+
+    Grupo, artefacto y nombre del proyecto.
+    Tipo de proyecto: **Gradle**.
+    Lenguaje: **Java**.
+    Forma de empaquetar la aplicación: **jar**.
+    Versión de Java: **11** o superior.
 
 ![imagen](img/img_02.png)
 
-En el menú que se abre selecciona la opción `Spring Initializr` y como SDK Java **11** o superior.
-
-En la ventana que se abre selecciona las siguientes opciones: 
-- Grupo, artefacto y nombre del proyecto.
-- Tipo de proyecto: **Maven Proyect**.
-- Lenguaje: **Java**.
-- Forma de empaquetar la aplicación: **jar**.
-- Versión de Java: **11** o **17**.
+Agrega Spring Web como la única dependencia del proyecto:
+ Spring Web como la única dependencia del proyecto:
 
 ![imagen](img/img_03.png)
 
-En la siguiente ventana selecciona Spring Web como dependencia para el proyecto. 
+Presiona el botón `GENERATE`.
+
+Dentro del paquete del proyecto crearemos un subpaquete que contendrá los controladores de Spring MVC (los componentes que reciben y manejan las peticiones web dentro de la aplicación).
+
+Haz clic con el botón derecho del ratón sobre el paquete y en el menú que se muestra selecciona las opciones `New  -> Package`. Dale a este nuevo paquete el nombre de `controllers`.
 
 ![imagen](img/img_04.png)
 
-Presiona el botón `Finish`. Con esto se creará un nuevo proyecto que tiene la siguiente estructura:
+Crea un segundo paquete llamado `model` a la misma altura que el paquete `controllers`. Al final debes tener dos paquetes adicionales:
 
 ![imagen](img/img_05.png)
 
-En esta sesión no modificaremos nada del código que el IDE ha creado de forma automática, eso lo dejaremos para la siguiente sesión.
+Dentro del paquete `model` crea una nueva clase llamada `Saludo`. Esta clase representará el modelo de los datos que regresará el servicio que crearemos en un momento. Esta será una clase sencilla que tendrá dos propiedades de tipo `String`: `mensaje` y `nombre`. Además de sus métodos *setter* y su método *getter*:    
 
-El siguiente paso es compilar el código de la aplicación. Para hacerlo ve al panel llamado **Gradle** que se encuentra del lado derecho del IDE. Es posible que este panel se encuentre minimizado, como se muestra en la siguiente imagen:
+```java
+public class Saludo {
+    private String mensaje;
+    private String nombre;
+
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+}
+```
+
+En el paquete `controller` crea una nueva clase llamada `SaludoController`. Esta clase implementará los servicios web REST que manejan a los recursos de tipo `Saludo`. Para indicar a Spring que este componente es un servicio REST debemos decorar la case con la anotación `@RestController`:
+
+```java
+@RestController
+public class SaludoController {
+
+}
+```
+
+Esta clase tendrá, en este momento, un  solo método o manejador de llamadas, el cual no recibirá ningún parámetro y regresará un recurso de tipo `Saludo` con un mensaje preestablecido.
+
+```java
+    public Saludo saluda(){
+
+      Saludo saludo = new Saludo();
+      saludo.setMensaje("¡¡Hola Mundo!!");
+      saludo.setNombre(nombre);
+
+      return saludo;
+    }
+```
+
+Para indicar que este método es un manejador de peticiones debemos indicar qué tipo de operaciones manejará (el verbo HTTP que soportará). Como en este caso solo se usará para leer información estática se usará el verbo **GET**. Spring en su módulo web (Spring MVC) proporciona una serie de anotaciones que permite indicar esto de una forma sencilla. En este caso la anotación que se usrá es `@GetMapping` a la cual hay que indicarle la URL de las peticiones que manejará. En este caso será la ruta `saludo`. El método completo queda de la siguiente forma:
+
+```java
+     @GetMapping("/saludo/{nombre}")
+    public Saludo saluda(@PathVariable String nombre){
+
+        Saludo saludo = new Saludo();
+        saludo.setMensaje("¡¡Hola Mundo!!");
+        saludo.setNombre(nombre);
+
+        return saludo;
+    }
+```
+
+Ejecuta la aplicación, en la consola del IDE debes ver un mensaje similar al siguiente:
 
 ![imagen](img/img_06.png)
 
-Para abrirlo solo haz clic sobre el nombre del panel, con esto debe desplegarse como se muestra en la siguiente imagen:
+Esto quiere decir que la aplicación se ejecutó correctamente y todo está bien configurado.
+
+Desde tu navegador entra en la siguiente ruta: [http://localhost:8080/saludo/beto](http://localhost:8080/saludo/beto). Debes ver una salida similar a la siguiente:
 
 ![imagen](img/img_07.png)
 
-Ahora, para compilar el código de  aplicación y generar el archivo `jar` que permite la ejecución de esta hay que  doble clic sobre el elemento `bootJar` (con lo que se le indica a Maven que este es el último paso del ciclo de vida de construcción de la aplicación que debe ejecutar).
+Dependiendo de tu navegador y de los plugins que tengas instalado, podrías ver el formato un poco diferente; lo importante es que veas el texto "**¡¡Hola Mundo!!**".
+
+Esto quiere decir que la aplicación ha funcionado de forma correcta.
+
+Ahora, consumiremos el servicio usando *Postman. Al abrir Postman debes ver una ventana similar a la siguiente:
 
 ![imagen](img/img_08.png)
 
-En el panel de salida del IDE debemos ver un mensaje como el siguiente, que indica que la aplicación se compiló y ejecutó correctamente:
+Haz clic en la opción *Create a basic request*. En la siguiente ventana coloca la misma URL de la petición que usaste en el navegador y presiona el botón `Send`. Una vez que recibas la respuesta, debes ver una salida similar en el panel de respuestas:
 
 ![imagen](img/img_09.png)
 
-Finalmente, para ejecutar la aplicación debemos presionar el botón de la flecha verde situado en la parte superior del IDE.
-
-![imagen](img/img_10.png)
-
-Con esto debemos ver una salida similar a la siguiente en el panel de salida del IDE:
-
-![imagen](img/img_11.png)
-
-Esto indica que la aplicación se levantó correctamente en el puerto **8080**.
-
-  http://localhost:8080
-
-Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
-
-![imagen](img/img_12.png)
-
-Detén la aplicación presionando el botón del cuadro rojo en el panel de salida del IDE.
-
-![imagen](img/img_13.png)
-
-
 </details>
+
+<br>
+
+[**`Siguiente`** -> ejemplo 02](../Ejemplo-03/)

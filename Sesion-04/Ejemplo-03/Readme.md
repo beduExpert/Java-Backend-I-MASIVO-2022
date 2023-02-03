@@ -18,7 +18,7 @@ Hasta el momento has aprendido a usar el métod **GET** para obtener recursos. E
 
 #### Implementación
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ Idea como lo hiciste en la primera sesión. Selecciona las siguientes opciones:
+Crea un proyecto usando Spring Initializr. Selecciona las siguientes opciones:
 
     Grupo, artefacto y nombre del proyecto.
     Tipo de proyecto: **Gradle**.
@@ -32,7 +32,7 @@ En la siguiente ventana elige Spring Web como la única dependencia del proyecto
 
 ![imagen](img/img_03.png)
 
-Presiona el botón `Finish`.
+Presiona el botón `GENERATE`.
 
 Dentro del paquete del proyecto crearemos un subpaquete que contendrá los controladores de Spring MVC.
 
@@ -136,3 +136,7 @@ Coloca el siguiente contenido en el cuerpo de la petición:
 Presiona el botón `Send`. Al recibir la repuesta debes obtener el siguiente resultado:
 
 ![imagen](img/img_08.png)
+
+<br>
+
+[**`Siguiente`** -> reto 02](../Reto-02/)

@@ -33,7 +33,7 @@ En este ejemplo implementarás tu primer controlador REST usando Spring MVC.
 
 #### Implementación
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ Idea como lo hiciste en la primera sesión. Selecciona las siguientes opciones:
+Crea un proyecto usando Spring Initializr. Selecciona las siguientes opciones:
 
     Grupo, artefacto y nombre del proyecto.
     Tipo de proyecto: **Gradle**.
@@ -43,11 +43,11 @@ Crea un proyecto usando Spring Initializr desde el IDE IntelliJ Idea como lo hic
 
 ![imagen](img/img_02.png)
 
-En la siguiente ventana elige Spring Web como la única dependencia del proyecto:
+Agrega Spring Web como la única dependencia del proyecto:
 
 ![imagen](img/img_03.png)
 
-Presiona el botón `Finish`.
+Presiona el botón `GENERATE`.
 
 Dentro del paquete del proyecto crearemos un subpaquete que contendrá los controladores de Spring MVC (los componentes que reciben y manejan las peticiones web dentro de la aplicación).
 
@@ -140,3 +140,7 @@ En la siguiente ventana coloca la misma URL de la petición que usaste en el nav
 Una vez que recibas la respuesta, debes ver una salida similar en el panel de respuestas:
 
 ![imagen](img/img_11.png)
+
+<br>
+
+[**`Siguiente`** -> reto 01](../Reto-01/)

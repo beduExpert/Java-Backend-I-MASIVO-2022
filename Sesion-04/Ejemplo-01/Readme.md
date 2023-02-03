@@ -42,7 +42,7 @@ Descomprime el archivo `zip` descargado, el cual tiene más o menos el siguiente
 
 Abre una terminal o línea de comandos en el directorio que acabas de descomprimir y ejecuta los siguientes comandos, los cuales se ejecutan en Gradle gracias a un *wrapper* que se distribuye dentro del paquete que acabas de descargar:
 
-        gradlew clean build
+        gradle clean build
       
 7. La salida del comando anterior debe ser parecida a la siguiente:
 
@@ -50,7 +50,7 @@ Abre una terminal o línea de comandos en el directorio que acabas de descomprim
 
 Una vez que todo está compilado, usa el siguiente comando para ejecutar la aplicación. 
 
-        gradlew bootRun
+        gradle bootRun
         
 Debes obtener una salida similar a la siguiente:
 
@@ -68,7 +68,7 @@ Detén la aplicación presionando `Ctrl + C` en la terminal en donde levantaste 
 
 Puesto que la aplicación está completamente contenida en un archivo `jar`, también es posible ejecutarla de otra forma.
 
-Al compilar la aplicación con `gradlew build` se creó un directorio `build` y dentro de este un directorio `libs`. Navega a este directorio, el cual debe contener solamente un archivo `jar`.
+Al compilar la aplicación con `gradle build` se creó un directorio `build` y dentro de este un directorio `libs`. Navega a este directorio, el cual debe contener solamente un archivo `jar`.
 
 ![imagen](img/img_09.png)
 
@@ -89,3 +89,8 @@ Una vez que el sitio cargue, debes ver una pantalla como la siguiente:
 ![imagen](img/img_09.png)
 
 ¡¡Felicidades, acabas de ejecutar tu primer "Hola mundo" con Spring Boot!!
+
+
+<br>
+
+[**`Siguiente`** -> ejemplo 02](../Ejemplo-02/)
