@@ -44,4 +44,4 @@ Y en la consola de IntelliJ Idea debes obtener esta salida:
 
 <br>
 
-[**`Siguiente`** -> ejemplo 01](../Ejemplo-02/)
+[**`Siguiente`** -> ejemplo 02](../Ejemplo-02/)
