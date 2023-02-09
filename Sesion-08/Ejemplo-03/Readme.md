@@ -8,68 +8,17 @@
 
 ### DESARROLLO
 
-Antes de comenzar asegúrate de tener instado [MySQL Community Edition](https://www.mysql.com/products/community/) y de crear una base de datos llamada `bedu`.
+Utilizaremos el mismo proyecto del ejemplo 01.
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ con las siguientes opciones:
+Agregaremos una dependencia adicional a `Spring Web`, `MySQL Driver` y `Spring Data JPA`, `H2 Database`.
 
-  - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
-  - Lenguaje: **Java**.
-  - Versión de Spring Boot, la versión estable más reciente
-  - Grupo, artefacto y nombre del proyecto.
-  - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11** o superior.
+Para agregarla modificaremos `build.gradle`, agregando la siguiente linea dentro de dependencias.
 
-![](img/img_01.png)
-
-En la siguiente ventana elige `Spring Web`, `MySQL Driver`, `Spring Data JPA` y `H2 Database` como dependencias del proyecto:
-
-![imagen](img/img_02.png)
-
-Presiona el botón "Finish".
-
-Dentro del nuevo proyecto crea los siguientes subpaquetes: `model` y `persistence`.
-
-Dentro del paquete `model` crea una clase llamada `Etapa` con los siguientes atributos, junto con sus **getters** y **setters** :
-
-```java
-public class Etapa {
-    private Long etapaId;
-    private String nombre;
-    private Integer orden;
-}
+```groovy
+	runtimeOnly 'com.h2database:h2'
 ```
 
-Decora también la clase con las siguientes anotaciones de JPA del paquete `javax.persistence`:
-
-```java
-@Entity
-@Table(name = "ETAPAS")
-public class Etapa {
-
-}
-```
-
-Decora los atributos con las siguientes anotaciones de JPA:
-
-```java
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long etapaId;
-
-    @Column(nullable = false, length = 100)
-    private String nombre;
-
-    @Column(nullable = false, unique = true)
-    private Integer orden;
-```
-
-En el paquete `persistence` crea una interface llamada `EtapaRepository` que extienda de `JpaRepository`. Esta interface permanecerá sin métodos:
-
-```java
-public interface EtapaRepository extends JpaRepository<Etapa, Long> {
-
-}
-```
+![imagen](img/01.png)
 
 Coloca el siguiente contenido en el archivo `application.properties` (los valores entre los signos < y > reemplazalos con tus propios valores):
 
@@ -107,3 +56,10 @@ Vuelve a colocar el password y presiona el botón Connect debes entrar a la cons
 Escribe una consulta en la consola; la información aparcera en el panel de respuestas.
 
 ![](img/img_06.png)
+
+
+<br>
+
+[**`Siguiente`** -> postwork](../Postwork/)
+
+[**`Regresar`**](../)

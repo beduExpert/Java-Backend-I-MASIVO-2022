@@ -8,26 +8,9 @@
 
 ### DESARROLLO
 
-Antes de comenzar asegúrate de tener instado [MySQL Community Edition](https://www.mysql.com/products/community/) y de crear una base de datos llamada `bedu`.
+A continuación seguiremos trabajando con el proyecto anterior.
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ con las siguientes opciones:
-
-  - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
-  - Lenguaje: **Java**.
-  - Versión de Spring Boot, la versión estable más reciente
-  - Grupo, artefacto y nombre del proyecto.
-  - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11** o superior.
-
-![](img/img_01.png)
-
-En la siguiente ventana elige `Spring Web`, `MySQL Driver` y `Spring Data JPA` como dependencias del proyecto:
-
-![imagen](img/img_02.png)
-
-Presiona el botón "Finish".
-
-Dentro del nuevo proyecto crea los siguientes subpaquetes: `runners`, `model` y `persistence`.
+Dentro del proyecto crea el siguiente subpaquete: `runners`
 
 ![](img/img_03.png)
 
@@ -141,3 +124,8 @@ La base de datos debe estar inicializada con las `Etapas`:
 
 
 ![](img/img_05.png)
+
+
+<br>
+
+[**`Siguiente`** -> reto 02](../Reto-02/)

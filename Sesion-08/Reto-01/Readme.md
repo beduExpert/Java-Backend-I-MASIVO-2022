@@ -55,3 +55,8 @@ Y al recuperar el nuevo custo creado, debes obtener la siguiente respuesta [http
 ### Solución
 
 ¡Recuerda intentar resolver el reto antes de ver la solución! Una vez que lo hayas intentado puedes dirijirte al [proyecto con la solución](./solucion).
+
+
+<br>
+
+[**`Siguiente`** -> ejemplo 02](../Ejemplo-02/)

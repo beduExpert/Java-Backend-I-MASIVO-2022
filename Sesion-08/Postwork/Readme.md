@@ -21,3 +21,7 @@ En esta ocasión tu misión será extender este programa eliminando el `Set` en 
 
 ### Solución
 ¡Recuerda intentar resolver el reto antes de ver la solución! Una vez que lo hayas intentado puedes dirijirte al [proyecto con la solución](./solucion).
+
+<br>
+
+[**`Regresar`**](../)

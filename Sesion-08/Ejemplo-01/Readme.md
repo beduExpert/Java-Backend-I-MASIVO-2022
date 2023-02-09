@@ -8,22 +8,21 @@
 
 ### DESARROLLO
 
-Antes de comenzar asegúrate de tener instado [MySQL Community Edition](https://www.mysql.com/products/community/) y de crear una base de datos llamada `bedu`.
+Antes de comenzar asegúrate de tener instado [MySQL Community Downloads](https://dev.mysql.com/downloads/mysql/) y de crear una base de datos llamada `bedu`.
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ con las siguientes opciones:
-
+Entra al sitio de [Spring Initializr](https://start.spring.io/). Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
   - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
   - Lenguaje: **Java**.
   - Versión de Spring Boot, la versión estable más reciente
   - Grupo, artefacto y nombre del proyecto.
   - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11** o superior.
+  - Versión de Java: **11** o **17**.
 
 ![](img/img_01.png)
 
 En la siguiente ventana elige `Spring Web`, `MySQL Driver` y `Spring Data JPA` como dependencias del proyecto:
 
-![imagen](img/img_02.png)
+![imagen](img/02.png)
 
 Presiona el botón "Finish".
 
@@ -159,3 +158,8 @@ debes tener la siguiente respuesta en la consola de Postman:
 Revisa la base de datos, la tabla `CLIENTE` debe haberse creado de forma automática y debe tener almacenado el registro con los datos enviados desde Postman:
 
 ![](img/img_06.png)
+
+
+<br>
+
+[**`Siguiente`** -> reto 01](../Reto-01/)

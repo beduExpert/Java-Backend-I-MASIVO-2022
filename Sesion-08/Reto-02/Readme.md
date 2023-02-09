@@ -1,4 +1,4 @@
-## Reto 01: Inicialización de datos con SQL
+## Reto 02: Inicialización de datos con SQL
 
 ### OBJETIVO
 
@@ -31,3 +31,8 @@ CREATE TABLE `etapas` (
 ### Solución
 
 ¡Recuerda intentar resolver el reto antes de ver la solución! Una vez que lo hayas intentado puedes dirijirte al [proyecto con la solución](./solucion).
+
+
+<br>
+
+[**`Siguiente`** -> ejemplo 03](../Ejemplo-03/)
