@@ -7,14 +7,13 @@
 
 ### DESARROLLO
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ con las siguientes opciones:
-
+Entra al sitio de [Spring Initializr](https://start.spring.io/). Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
   - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
   - Lenguaje: **Java**.
   - Versión de Spring Boot, la versión estable más reciente
   - Grupo, artefacto y nombre del proyecto.
   - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11** o superior.
+  - Versión de Java: **11** o **17**.
 
 ![](img/img_01.png)
 
@@ -212,3 +211,8 @@ Envia la petición y ahora debes obtener esto como respuesta:
 ![](img/img_06.png)
 
 Para ver una lista completa de los parámetros que puedes recibir en una petición, consulta la [Documentación Oficial de Spring MVC](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-ann-arguments).
+
+
+<br>
+
+[**`Siguiente`** -> reto 01](../Reto-01/)

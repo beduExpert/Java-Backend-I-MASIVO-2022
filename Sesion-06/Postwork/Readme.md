@@ -1,4 +1,4 @@
-## Sesión 6: Introducción a Spring MVC
+## **Postwork** Sesión 6: Introducción a Spring MVC
 
 ### OBJETIVO
 
@@ -18,21 +18,6 @@ La lógica de la aplicación debe estar contenida en una clase “servicio” qu
 
 <details>
   <summary>Solución</summary>
-
-  
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ Idea como lo hiciste en la primera sesión. Selecciona las siguientes opciones:
-
-    Grupo, artefacto y nombre del proyecto.
-    Tipo de proyecto: **Gradle**.
-    Lenguaje: **Java**.
-    Forma de empaquetar la aplicación: **jar**.
-    Versión de Java: **11** o superior.
-
-![imagen](img/img_01.png)
-
-En la siguiente ventana selecciona `Spring Web` como la única dependencias del proyecto y presiona el botón `Finish`.
-
-![imagen](img/img_02.png)
 
 Crea cuatro nuevos paquetes dentro de la aplicación: `model` que contendrá el modelo de datos de la aplicación; `controller` que tendrá el controlador principal de la aplicación; `persistence` que contendrá las clases de acceso a datos; y `service` que tendrá los servicios con la lógica de la aplicación.
 
@@ -95,7 +80,6 @@ public class Persona {
 `Persona` debe implementar también la interface `java.lang.Comparable` usando el `nombre` de la persona. Esto permitirá que la lista de personas en la agenda se ordene de forma automática usando este atributo:
 
 ```java
-@Override
 public class Persona implements Comparable<Persona> {
     private String nombre;
     private String telefono;
@@ -387,3 +371,9 @@ Continúa agregando más registros para que veas como poco a poco se va llenando
 
 
 </details>
+
+<br>
+
+[**`Siguiente`** -> sesión 07](../../Sesion-07/)
+
+[**`Regresar`**](../)

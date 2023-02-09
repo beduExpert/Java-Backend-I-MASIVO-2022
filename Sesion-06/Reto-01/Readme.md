@@ -39,3 +39,9 @@ Y en la consola de IntelliJ Idea debes obtener esta salida:
 ### Solución
 
 ¡Recuerda intentar resolver el reto antes de ver la solución! Una vez que lo hayas intentado puedes dirijirte al [proyecto con la solución](./solucion).
+
+
+
+<br>
+
+[**`Siguiente`** -> ejemplo 01](../Ejemplo-02/)

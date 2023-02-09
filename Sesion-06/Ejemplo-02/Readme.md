@@ -7,14 +7,13 @@
 
 ### DESARROLLO
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ con las siguientes opciones:
-
+Entra al sitio de [Spring Initializr](https://start.spring.io/). Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
   - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
   - Lenguaje: **Java**.
   - Versión de Spring Boot, la versión estable más reciente
   - Grupo, artefacto y nombre del proyecto.
   - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11** o superior.
+  - Versión de Java: **11** o **17**.
 
 ![](img/img_01.png)
 
@@ -243,3 +242,12 @@ Ejecuta nuevamente la aplicación, debes ver la misma salida en Postman.
 ![](img/img_05.png)
 
 Para ver la lista completa de los tipos de retorno que puedes usar para los manejadores de peticiones, puedes consultar la [documentación oficial de Spring MVC](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-ann-return-types).
+
+
+<br>
+
+[**`Siguiente`** -> postwork](../Postwork/)
+
+[**`Siguiente`** -> sesión 07](../../Sesion-07/)
+
+[**`Regresar`**](../)
