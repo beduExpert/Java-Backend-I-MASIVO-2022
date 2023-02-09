@@ -29,17 +29,17 @@ bootRun {
   <summary>Solución</summary>
 
   
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ Idea como lo hiciste en la primera sesión. Selecciona las siguientes opciones:
+Entra al sitio de [Spring Initializr](https://start.spring.io/). Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
+  - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
+  - Lenguaje: **Java**.
+  - Versión de Spring Boot, la versión estable más reciente
+  - Grupo, artefacto y nombre del proyecto.
+  - Forma de empaquetar la aplicación: **jar**.
+  - Versión de Java: **11** o **17**.
 
-    Grupo, artefacto y nombre del proyecto.
-    Tipo de proyecto: **Gradle**.
-    Lenguaje: **Java**.
-    Forma de empaquetar la aplicación: **jar**.
-    Versión de Java: **11** o superior.
+![](img/img_01.png)
 
-![imagen](img/img_02.png)
-
-En la siguiente ventana no selecciones ninguna dependencia; no las necesitaremos en este proyecto. Presiona el botón `Finish`.
+En la siguiente ventana no selecciones ninguna dependencia; no las necesitaremos en este proyecto. Presiona el botón `Generate`.
 
 Crea dos paquetes, un paquete `model` y un paquete `service`. Dentro del paquete `service` replica la clase `Persona` que creamos en el módulo anterior.
 
@@ -305,3 +305,9 @@ Ejecuta la aplicación. Si lo haces desde IntelliJ Idea deberás hacer clic en l
 La aplicación se detendrá de forma automática cuando el resultado se imprima en pantalla.
 
 </details>
+
+<br>
+
+[**`Siguiente`** -> sesión 06](../../Sesion-06/)
+
+[**`Regresar`**](../)

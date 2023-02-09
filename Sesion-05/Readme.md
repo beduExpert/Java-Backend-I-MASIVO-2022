@@ -24,7 +24,7 @@ En este módulo aprenderemos:
 
 ---
 
-<img src=".github/assets/img/beans.jpeg" align="right" height="90" hspace="10">
+<img src="./img/01.jpg" align="right" height="120" hspace="10">
 
 #### <ins>Tema 1: ¿Qué son los Beans en Spring?</ins>
 
@@ -38,7 +38,7 @@ Crear e inyectar un *Bean* en Spring es muy sencillo, como lo veremos en el Ejem
 
 ---
 
-<img src=".github/assets/img/selection.jpg" align="right" height="90" hspace="10">
+<img src="./img/02.jpg" align="right" height="120" hspace="10">
 
 #### <ins>Tema 2: Configuración implícita de Beans para inyección de dependencias.</ins>
 
@@ -49,7 +49,7 @@ Si bien es posible inicializar y configurar los *Beans* de forma explícita (y e
 
 ---
 
-<img src=".github/assets/img/preparation.jpg" align="right" height="90" hspace="10">
+<img src="./img/03.jpg" align="right" height="120" hspace="10">
 
 #### <ins>Tema 3: Inicialización de propiedades.</ins>
 

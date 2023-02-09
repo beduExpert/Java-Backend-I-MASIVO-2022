@@ -44,7 +44,7 @@ Si ejecutas la aplicación, debes ver el siguiente mensaje en la consola:
 
 ![imagen](img/img_01.png)
 
-El primer mensaje aprece entre algunos otros textos de la consola, pero a pesar de que tenemos dos instancias solo hay un mensaje. 
+El primer mensaje aparece entre algunos otros textos de la consola, pero a pesar de que tenemos dos instancias solo hay un mensaje. 
 
 Podemos hacer una segunda prueba para comprobar esto, comparando las dos instancias usando el operador `==`:
 
@@ -72,3 +72,8 @@ Tu reto consiste en modifcar la forma en la que Spring crea las instancias de `S
 ### Solución
 
 ¡Recuerda intentar resolver el reto antes de ver la solución! Una vez que lo hayas intentado puedes dirijirte al [proyecto con la solución](./solucion).
+
+
+<br>
+
+[**`Siguiente`** -> ejemplo 03](../Ejemplo-03/)

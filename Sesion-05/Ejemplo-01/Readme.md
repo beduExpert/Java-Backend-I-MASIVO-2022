@@ -8,20 +8,19 @@
 
 ### DESARROLLO
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ con las siguientes opciones:
-
+Entra al sitio de [Spring Initializr](https://start.spring.io/). Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
   - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
   - Lenguaje: **Java**.
   - Versión de Spring Boot, la versión estable más reciente
   - Grupo, artefacto y nombre del proyecto.
   - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11** o superior.
+  - Versión de Java: **11** o **17**.
 
-![](img/img_001.png)
+![](img/img_01.png)
 
 No selecciones ninguna dependencia, no las necesitaremos en este ejemplo.
 
-Presiona el botón "Finish".
+Presiona el botón "Generate".
 
 Ahora, crea dos paquetes dentro de la estructura creada por IntelliJ. El primer paquete se llamará `model` y el segundo `config`:
 
@@ -178,3 +177,8 @@ Si volvemos a ejecutar la aplicación, veremos que obtenemos la misma salida.
 ![](img/img_003.png)
 
 Esta tercera forma es la recomandada para inyectar los Beans dentro de las distintas clases de nuestra aplicación.
+
+
+<br>
+
+[**`Siguiente`** -> ejemplo 02](../Ejemplo-02/)
