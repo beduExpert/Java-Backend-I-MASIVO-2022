@@ -1,4 +1,4 @@
-## Sesión 3: Pruebas dinámicas
+## Postwork Sesión 3: Pruebas dinámicas
 
 ### 🎯 OBJETIVO
 

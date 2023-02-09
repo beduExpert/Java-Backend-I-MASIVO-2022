@@ -1,4 +1,4 @@
-## Sesión 2: Patrón Decorador
+## Postwork Sesión 2: Patrón Decorador
 
 ### 🎯 OBJETIVO
 

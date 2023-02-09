@@ -1,4 +1,4 @@
-## **Postwork** Sesión 6: Introducción a Spring MVC
+## Postwork Sesión 6: Introducción a Spring MVC
 
 ### OBJETIVO
 

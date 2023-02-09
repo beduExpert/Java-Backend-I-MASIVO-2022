@@ -1,4 +1,4 @@
-## Sesión 7: Integración de Thymeleaf y Spring Boot
+## Postwork Sesión 7: Integración de Thymeleaf y Spring Boot
 
 ### OBJETIVO
 
