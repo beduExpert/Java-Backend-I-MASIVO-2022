@@ -23,13 +23,13 @@ bootRun {
   <summary>Solución</summary>
 
   
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ Idea como lo hiciste en la primera sesión. Selecciona las siguientes opciones:
-
-    Grupo, artefacto y nombre del proyecto.
-    Tipo de proyecto: **Gradle**.
-    Lenguaje: **Java**.
-    Forma de empaquetar la aplicación: **jar**.
-    Versión de Java: **11** o superior.
+Entra al sitio de [Spring Initializr](https://start.spring.io/). Ahí verás una sola página dividida en dos secciones. Comienza llenando la información de la sección del lado izquierdo. Selecciona:
+  - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
+  - Lenguaje: **Java**.
+  - Versión de Spring Boot, la versión estable más reciente
+  - Grupo, artefacto y nombre del proyecto.
+  - Forma de empaquetar la aplicación: **jar**.
+  - Versión de Java: **11** o **17**.
 
 ![imagen](img/img_02.png)
 
