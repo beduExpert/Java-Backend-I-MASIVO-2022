@@ -21,3 +21,10 @@ En el Postwork de la sesión anterior continuamos con la implementación de nues
 ### Solución
 
 ¡Recuerda intentar resolver el reto antes de ver la solución! Una vez que lo hayas intentado puedes dirijirte al [proyecto con la solución](./solucion).
+
+
+<br>
+
+[**`Siguiente`** -> sesión 08](../../Sesion-08/)
+
+[**`Regresar`**](../)

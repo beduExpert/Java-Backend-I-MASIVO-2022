@@ -1,34 +1,34 @@
-## Sesión 7: Integración de Thymeleaf y Spring Boot
+## Sesiï¿½n 7: Integraciï¿½n de Thymeleaf y Spring Boot
 
-<img src=".github/assets/img/thymeleaf.png" align="right" height="120" hspace="10">
+<img src="img/01.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart:
 
-- Integrar Thymeleaf como motor de generación de vistas en una aplicación desarrollada usando Spring Boot.
-- Mostrar mensajes estáticos en una página web.
-- Mostrar mensajes dinámicos en una página web.
+- Integrar Thymeleaf como motor de generaciï¿½n de vistas en una aplicaciï¿½n desarrollada usando Spring Boot.
+- Mostrar mensajes estï¿½ticos en una pï¿½gina web.
+- Mostrar mensajes dinï¿½micos en una pï¿½gina web.
 - Procesar formularios.
 
 
 ### 2. Contenido :blue_book:
 
-Thymeleaf es un motor de plantillas Java para aplicaciones, tanto web como standalone, construido sobre estándares HTML5, por lo que es compatible con la inmensa mayoría de navegadores. Entre sus principales características cabe destacar su flexibilidad y su alto rendimiento que, junto con su facilidad de aprendizaje y su poco intrusismo en el marcado lo convierten en una alternativa real a otras opciones más populares como JSP.
+Thymeleaf es un motor de plantillas Java para aplicaciones, tanto web como standalone, construido sobre estï¿½ndares HTML5, por lo que es compatible con la inmensa mayorï¿½a de navegadores. Entre sus principales caracterï¿½sticas cabe destacar su flexibilidad y su alto rendimiento que, junto con su facilidad de aprendizaje y su poco intrusismo en el marcado lo convierten en una alternativa real a otras opciones mï¿½s populares como JSP.
 
-En este módulo aprenderemos:
+En este mï¿½dulo aprenderemos:
 
-- Integrar Thymeleaf como motor de generación de vistas en una aplicación desarrollada usando Spring Boot.
-- Generar contenido estático.
-- Generar contenido dinámico.
+- Integrar Thymeleaf como motor de generaciï¿½n de vistas en una aplicaciï¿½n desarrollada usando Spring Boot.
+- Generar contenido estï¿½tico.
+- Generar contenido dinï¿½mico.
 - Manejo de formularios.
 
 ---
 
-<img src=".github/assets/img/html.jpg" align="right" height="90" hspace="10">
+<img src="img/02.png" align="right" height="100" hspace="10">
 
-#### <ins>Tema 1: Integración de Thymeleaf y Spring Boot</ins>
+#### <ins>Tema 1: Integraciï¿½n de Thymeleaf y Spring Boot</ins>
 
-Thymeleaf como motor de plantillas se integra de una forma perfecta con los controladores de Spring MVC. En el primer tema aprenderemos cómo realizar esta integración y a desplegar un mensaje estático en un HTML generado en el [primer ejemplo](./Ejemplo-01), mientras que en el [primer reto](./Reto-01) tendrás que modificar este mensaje para que sea dinámico.
+Thymeleaf como motor de plantillas se integra de una forma perfecta con los controladores de Spring MVC. En el primer tema aprenderemos cï¿½mo realizar esta integraciï¿½n y a desplegar un mensaje estï¿½tico en un HTML generado en el [primer ejemplo](./Ejemplo-01), mientras que en el [primer reto](./Reto-01) tendrï¿½s que modificar este mensaje para que sea dinï¿½mico.
 
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
@@ -36,21 +36,21 @@ Thymeleaf como motor de plantillas se integra de una forma perfecta con los cont
 
 ---
 
-<img src=".github/assets/img/form.png" align="right" height="90" hspace="10">
+<img src="img/03.png" align="right" height="100" hspace="10">
 
 #### <ins>Tema 2: Manejo de formularios.</ins>
 
-La forma más habitual de obtener información de un usuario es a través de un formulario, el cual es un conjunto de campos agrupados a través de los cuales solicitamos esta información. En el [segundo ejemplo](./Ejemplo-02) aprenderemos cómo generar un formulario y enviar su información a un controlador para que sea procesada.
+La forma mï¿½s habitual de obtener informaciï¿½n de un usuario es a travï¿½s de un formulario, el cual es un conjunto de campos agrupados a travï¿½s de los cuales solicitamos esta informaciï¿½n. En el [segundo ejemplo](./Ejemplo-02) aprenderemos cï¿½mo generar un formulario y enviar su informaciï¿½n a un controlador para que sea procesada.
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 
 ---
 
-<img src=".github/assets/img/validation.jpg" align="right" height="90" hspace="10">
+<img src="img/04.webp" align="right" height="120" hspace="10">
 
-#### <ins>Tema 3: Validación de formularios y manejo de errores.</ins>
+#### <ins>Tema 3: Validaciï¿½n de formularios y manejo de errores.</ins>
 
-Aunque un formulario esté bien diseñado, podemos esperar que habrá usuarios que introducirán información incorrecta, ya sea de forma accidental o buscando causar algún daño. Es por eso que la validación de los datos y sus formatos dentro de un formulario es muy importante. En el [ejemplo 3](./Ejemplo-03) aprenderemos cómo realizar una validación básica de un formulario y en el [segundo reto](./Reto-02) deberás además mostrar un mensaje de error cuando ocurra algún problema de validación. 
+Aunque un formulario estï¿½ bien diseï¿½ado, podemos esperar que habrï¿½ usuarios que introducirï¿½n informaciï¿½n incorrecta, ya sea de forma accidental o buscando causar algï¿½n daï¿½o. Es por eso que la validaciï¿½n de los datos y sus formatos dentro de un formulario es muy importante. En el [ejemplo 3](./Ejemplo-03) aprenderemos cï¿½mo realizar una validaciï¿½n bï¿½sica de un formulario y en el [segundo reto](./Reto-02) deberï¿½s ademï¿½s mostrar un mensaje de error cuando ocurra algï¿½n problema de validaciï¿½n. 
 
 - [**`EJEMPLO 3`**](./Ejemplo-03)
 - [**`Reto 2`**](./Reto-02)
@@ -59,9 +59,9 @@ Aunque un formulario esté bien diseñado, podemos esperar que habrá usuarios que 
 
 ### 3. Postwork :memo:
 
-Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
+Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este mï¿½dulo.
 
-- [**`POSTWORK SESIÓN 7`**](./Postwork/)
+- [**`POSTWORK SESIï¿½N 7`**](./Postwork/)
 
 <br/>
 

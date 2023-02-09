@@ -8,24 +8,21 @@
 
 ### DESARROLLO
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ con las siguientes opciones:
+Utilizaremos el mismo proyecto del ejemplo 01.
 
-  - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
-  - Lenguaje: **Java**.
-  - Versión de Spring Boot, la versión estable más reciente
-  - Grupo, artefacto y nombre del proyecto.
-  - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11** o superior.
+Agregaremos una dependencia adicional a Spring Web y Thymeleaf, `Validation`. Esta dependencia contiene las anotaciones que nos servirán para validar la información de nuestros objetos de dominio:
 
-![](img/img_01.png)
+Para agregarla modificaremos `build.gradle`, agregando la siguiente linea dentro de dependencias.
 
-Ahora seleccionaremos una dependencia adicional a Spring Web y Thymeleaf, `Validation`. Esta dependencia contiene las anotaciones que nos servirán para validar la información de nuestros objetos de dominio:
+```groovy
+implementation 'org.springframework.boot:spring-boot-starter-validation'
+```
 
-![imagen](img/img_02.png)
- 
-Presiona el botón "Finish".
+Quedando de la siguiente manera:
 
-En esta ocasión comenzaremos generando el formulario. Traeremos de regreso el formulario que realizamos en el [segundo ejemplo](../Ejemplo-02) de la sesión y agregaremos un nuevo campo: el correo electrónico del nuevo usuario:
+![imagen](img/02.png)
+
+Agregaremos un nuevo campo al `index.html`: el correo electrónico del nuevo usuario:
 
 ```html
 <!DOCTYPE html>
@@ -72,7 +69,7 @@ En esta ocasión comenzaremos generando el formulario. Traeremos de regreso el f
 </html>
 ```
 
-Ahora, crea la clase `Usuario` en el paquete `model`, la cual tiene los siguientes atributos:
+Ahora, modifica la clase `Usuario` en el paquete `model`, la cual tiene los siguientes atributos:
 
 ```java
 public class Usuario {
@@ -81,7 +78,7 @@ public class Usuario {
     private String username;
     private String rol;
     private String password;
-    private String telefono
+    private String telefono;
 }    
 ```
 
@@ -112,57 +109,12 @@ Ahora, agregaremos las validaciones. Para validar la información debemos decora
 
 Como puedes ver, cada atributo puede tener más de una validación.
 
-En el paquete `controllers` agrega una clase llamada `UsuarioController` y decórala con la anotación `@Controller`, de la siguiente forma:
-
-```java
-@Controller
-public class UsuarioController {
-}
-```
-
-
-Agrega un nuevo manejador de peticiones tipo `GET` el cual reciba como parámetro un objeto de tipo `Model` y regrese un objeto de tipo `String`. Este será el manejador que usaremos para mostrar la página con el formulario de registro.
-
-```
-    @GetMapping({"/", "/index"})
-    public String formularioRegistro(Model model){
-        model.addAttribute("usuario", new Usuario());
-        return "index";
-    }
-```
-
-Agrega un nuevo manejador de peticiones **POST** que reciba un objeto de tipo `Usuario` y regrese un `ModelAndView`. Este manejador indicará que una vez concluida la petición, el cliente debe ser enviado a la vista generada usando la plantilla `registroExitoso`.
-
-```java
-    @PostMapping("/registro")
-    public ModelAndView registra(Usuario usuario) {
-        ModelAndView mav = new ModelAndView("registroExitoso");
-        mav.addObject("usuario", usuario);
-        return mav;
-    }
-```
-
 Lo siguiente es indicarle a Spring que deseamos que valide la información del objeto `Usuario` que este manejador recibe como parámetro. Para eso debemos decorar este parámetro con la anotación `@Valid`:
 
 ```java
 public ModelAndView registra(@Valid Usuario usuario) {
   ...
 }
-```
-
-Ahora, crea la plantilla `registroExitoso` con el siguiente contenido:
-
-```java
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Registro Exitoso</title>
-</head>
-<body>
-Bienvenido <strong><span th:text=${usuario.nombre}/></strong> tu registro ha sido exitoso
-</body>
-</html>
 ```
 
 Antes de ejecutar la aplicación debemos hacer un par de modificaciones más. La primera es a la plantilla donde se encuentra el formulario `index.html`. Necesitamos indicar en qué lugar se mostrarán los mensajes de error de los campos que no cumplan con las validaciones. Para mostrar todos los mensajes de error, debemos colocar el siguiente bloque dentro de nuestro formulario:
@@ -234,3 +186,8 @@ Si bien ya estamos viendo los errores, los mensajes que se despliegan no son los
 Llena nuevamente los campos con información incorrecta y presiona el botón `Guardar`. Debes ver una pantalla como la siguiente:
 
 ![imagen](img/img_05.png)
+
+
+<br>
+
+[**`Siguiente`** -> reto 02](../Reto-02/)

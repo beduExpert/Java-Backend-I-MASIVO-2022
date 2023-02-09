@@ -7,28 +7,9 @@
 
 ### DESARROLLO
 
-Crea un proyecto usando Spring Initializr desde el IDE IntelliJ con las siguientes opciones:
+Utilizaremos el mismo proyecto del ejemplo 01.
 
-  - Gradle Proyect (no te preocupes, no es necesario que tengas Gradle instalado).
-  - Lenguaje: **Java**.
-  - Versión de Spring Boot, la versión estable más reciente
-  - Grupo, artefacto y nombre del proyecto.
-  - Forma de empaquetar la aplicación: **jar**.
-  - Versión de Java: **11** o superior.
-
-![](img/img_01.png)
-
-En la siguiente ventana elige Spring Web y Thymelead como dependencias del proyecto:
-
-![imagen](img/img_02.png)
- 
-Presiona el botón "Finish".
-
-IntelliJ creará de forma automática un directorio llamdo "templates". Ahí es donde poderemos poner las plantillas que se usarán para la generación de las páginas HTML de nuestros proyectos. Dentro de este directorio crea una nueva página html llamada `index.html` y otra página llamada "registroExitoso.html".
-
-![](img/img_03.png)
-
-En `index.html` colocaremos un pequeño formulario que nos permitirá registrar a un usuario al cual le pediremos su nombre real, nombre de usuario, contraseña y rol. No te preocupes de la parte gráfica, en este curso nos ocuparemos de que el formulario sea funcional y en otros módulos haremos que tenga una mejor presentación. En el formulario usaremos los siguientes elementos de Thymeleaf:
+Crearemos `index.html` colocaremos un pequeño formulario que nos permitirá registrar a un usuario al cual le pediremos su nombre real, nombre de usuario, contraseña y rol. No te preocupes de la parte gráfica, en este curso nos ocuparemos de que el formulario sea funcional y en otros módulos haremos que tenga una mejor presentación. En el formulario usaremos los siguientes elementos de Thymeleaf:
 
 - **th:action**: indica qué manejador de peticiones procesará la información del formulario.
 - **th:object**: el objeto que usaremos para llenar los datos del formulario (los cuales estarán inicialmente vacíos) y para enviar los datos al controlador que los procesará (una vez que hayamos llenado la información).
@@ -153,3 +134,7 @@ Debes ver la siguiente salida:
 ![](img/img_06.png)
 
 
+
+<br>
+
+[**`Siguiente`** -> ejemplo 03](../Ejemplo-03/)
