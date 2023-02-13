@@ -44,6 +44,4 @@ Crear un programa que imprima en pantalla la suma de los primeros 100 números y
 
 <br>
 
-[**`Siguiente`** -> sesión 02](../../Sesion-02/)
-
-[**`Regresar`**](../)
+[**`Siguiente`** -> postwork](../Postwork/)
