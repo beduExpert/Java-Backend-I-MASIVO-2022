@@ -6,6 +6,8 @@
 
 ### DESARROLLO
 
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
 En el Postwork de la sesión anterior implementamos una línea de comandos que solicitaba un nombre y número de teléfono y los usaba para construir una nueva instancia de una clase `Persona`. En esta ocasión tu misión será extender este programa para que la línea de comandos para que:
 
 1. Valide que el número de teléfono solo contenga caracteres válidos: números, guion medio y espacio en blanco.

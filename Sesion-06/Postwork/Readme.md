@@ -6,6 +6,8 @@
 
 ### DESARROLLO
 
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
 En el Postwork de la sesión anterior implementamos una aplicación que recibe el nombre y teléfono de una persona y realiza una validación y limpieza sobre el número de teléfono. En esta ocasión tu misión será extender este programa eliminando la línea de comandos y sustituyéndolo por un controlador web el cual además de recibir la información de la persona a través de un servicio REST, deberá de: 
 
 1. Reciba la información del nombre y número de teléfono en el cuerpo de la petición de un servicio **POST** y aplique el mismo proceso de validación y limpieza del teléfono que desarrollamos en el módulo anterior

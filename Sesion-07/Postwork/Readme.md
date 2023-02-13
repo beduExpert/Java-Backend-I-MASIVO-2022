@@ -6,6 +6,8 @@
 
 ### DESARROLLO
 
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
 En el Postwork de la sesión anterior implementamos una aplicación que recibe el nombre y teléfono de una persona y realiza una validación y limpieza sobre el número de teléfono. En esta ocasión tu misión será extender este programa eliminando la línea de comandos y sustituyéndolo por un controlador web el cual además de recibir la información de la persona a través de un servicio REST, deberá de: 
 
 En el Postwork de la sesión anterior continuamos con la implementación de nuestra agenda, recibiendo los datos a través de un API REST. En ésta ocasión reemplazamos el API con una página web que contenga las siguientes funcionalidades.

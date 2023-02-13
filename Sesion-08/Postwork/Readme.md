@@ -7,6 +7,8 @@
 
 ### DESARROLLO
 
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
 En el Postwork de la sesión anterior le dimos a nuestra agenda una interfaz de usuario muy sencilla. Con ella ya podemos ingresar en un formulario la información de las personas, y recuperar la misma para mostrarla en una lista. Sin embargo, debido a que estamos usando un almacén en memoria, cada vez que reiniciamos la aplicación perdemos la información que ya habíamos guardado. 
 
 En esta ocasión tu misión será extender este programa eliminando el `Set` en donde almacenamos la información de la agenda, y reemplzándolo por una base de datos relacional en MySQL. De esta forma, aunque reiniciemos la aplicación la información seguirá estando disponible.

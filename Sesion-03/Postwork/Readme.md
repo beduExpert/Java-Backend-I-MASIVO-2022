@@ -6,6 +6,8 @@
 
 ### DESARROLLO
 
+El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
 Los casos de prueba anotados con `@Test` son pruebas estáticas, esto quiere decir que al momento de compilar la aplicación ya se tienen todos los elementos de la prueba listos para ejecutarse y su comportamiento no puede cambiarse. Esto es muy útil cuando tenemos un conjunto pequeño de datos con los que queremos hacer la prueba. Pero puede convertirse en un problema cuando tenemos un conjunto grande o dinámico de las mismas `@Test` tiene muchas limitaciones. 
 
 Para sortear estas limitaciones, JUnit 5 agrega pruebas dinámicas, que son pruebas que se generan en tiempo de ejecución por un elemento conocido como fábrica de pruebas. Para esto también agrega una nueva anotación `@TestFactory`. 
