@@ -1,4 +1,4 @@
-## Sesi�n 7: Integraci�n de Thymeleaf y Spring Boot
+## Sesión 7: Integración de Thymeleaf y Spring Boot
 
 <img src="img/01.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
