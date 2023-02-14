@@ -6,9 +6,23 @@
 
 ### DESARROLLO
 
+En esta sesión aprendimos qué es la Inversión de Control y cómo usar los JavaBeans junto con la Inyección de Dependencias en Spring Boot. 
+
 El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
 
-En el Postwork de la sesión anterior implementamos una línea de comandos que solicitaba un nombre y número de teléfono y los usaba para construir una nueva instancia de una clase `Persona`. En esta ocasión tu misión será extender este programa para que la línea de comandos para que:
+**Asegúrate de comprender:**
+
+1. Cómo utilizar el Spring Initializr para crear un proyecto
+2. Cómo configurar un proyecto de Gradle
+3. Cómo crear una aplicación de líneas de comandos en Spring Boot
+4. Cómo utilizar la Inyección de Dependencias en Spring Boot
+
+
+**Indicaciones generales**
+
+En el Postwork de la sesión anterior implementamos una línea de comandos que solicitaba un nombre y número de teléfono de una `Persona`. 
+
+En esta ocasión tu misión será extender este programa para que la línea de comandos para que:
 
 1. Valide que el número de teléfono solo contenga caracteres válidos: números, guion medio y espacio en blanco.
 1. Valide que el número de teléfono contenga 10 dígitos.

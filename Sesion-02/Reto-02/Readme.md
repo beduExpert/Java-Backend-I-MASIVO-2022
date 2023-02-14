@@ -195,6 +195,4 @@ public class Application {
 
 [**`Siguiente`** -> postwork](../Postwork/)
 
-[**`Siguiente`** -> sesión 03](../../Sesion-03/)
-
 [**`Regresar`**](../)

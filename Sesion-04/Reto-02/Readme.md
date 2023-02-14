@@ -1,4 +1,4 @@
-## Reto 03: Controladores PUT para actualización de información
+## Reto 02: Controladores PUT para actualización de información
 
 ### OBJETIVO
 
@@ -170,7 +170,5 @@ Presiona el botón `Send`. Una vez que recibas la respuesta, debes ver una salid
 <br>
 
 [**`Siguiente`** -> postwork](../Postwork/)
-
-[**`Siguiente`** -> sesión 05](../../Sesion-05/)
 
 [**`Regresar`**](../)

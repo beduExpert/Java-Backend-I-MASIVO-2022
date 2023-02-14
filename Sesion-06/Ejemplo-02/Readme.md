@@ -248,6 +248,4 @@ Para ver la lista completa de los tipos de retorno que puedes usar para los mane
 
 [**`Siguiente`** -> postwork](../Postwork/)
 
-[**`Siguiente`** -> sesión 07](../../Sesion-07/)
-
 [**`Regresar`**](../)

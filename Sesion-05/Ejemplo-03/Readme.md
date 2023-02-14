@@ -165,6 +165,4 @@ Si ahora ejecutamos la aplicación, debemos obtener la siguiente salida en la co
 
 [**`Siguiente`** -> postwork](../Postwork/)
 
-[**`Siguiente`** -> sesión 06](../../Sesion-06/)
-
 [**`Regresar`**](../)

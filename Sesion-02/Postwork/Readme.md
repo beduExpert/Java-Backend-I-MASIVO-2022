@@ -2,15 +2,27 @@
 
 ### 🎯 OBJETIVO
 
-- Estudiar y resolver un problema utilizando el patrón Decorador
+- Resolver un problema utilizando patrones de diseño
+- Construir la solución utilizando Gradle
 
 ### DESARROLLO
 
+En esta sesión aprendimos la importancia de los patrones de diseño en el desarrollo y el cómo pueden facilitarnos la solución de diversos problemas a través de la Programación Orientada a Objetos. 
+
+Recuerda que todo lo trabajado en tu prework, así como durante la sesión, puede ser aplicado a tu proyecto personal. 
+
 El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
 
-Una cadena de helados muy famosa en el país ha solicitado tu ayuda para implementar una nueva versión de su sistema actual. 
+**Asegúrate de comprender:**
+1. Cómo construir una solución utilizando Gradle
+2. Las diferentes categorías de Patrones de Diseño
+3. En qué casos utilizar un patrón de diseño determinado
 
-Sus productos disponibles son los siguientes:
+
+**Indicaciones generales:**
+
+Una cadena de helados muy famosa en el país ha solicitado tu ayuda para implementar una nueva versión de su sistema actual. Sus productos disponibles son los siguientes:
+
 
 - Helado Suave	**$30**
 - Con Cobertura	**$20 extra**

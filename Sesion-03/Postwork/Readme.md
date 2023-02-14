@@ -2,11 +2,23 @@
 
 ### 🎯 OBJETIVO
 
-- Realizar una serie de pruebas dinámicas usando JUnit 5.
+- Utilizar JUnit para probar una pieza de código
+- Utilizar las anotaciones de JUnit para correr
+- Realizar pruebas dinámicas usando JUnit 5
 
 ### DESARROLLO
 
+En esta sesión aprendimos qué son las anotaciones en Java ayudan a agregar información adicional a un programa y que hay herramientas que explotan esta funcionalidad como lo es JUnit.
+
+Recuerda que todo lo trabajado en tu prework, así como durante la sesión, puede ser aplicado a tu proyecto personal. 
+
 El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
+
+**Asegúrate de comprender:**
+
+1. Cómo construir una solución utilizando Gradle
+2. Qué es una anotación
+3. Cómo usar JUnit
 
 Los casos de prueba anotados con `@Test` son pruebas estáticas, esto quiere decir que al momento de compilar la aplicación ya se tienen todos los elementos de la prueba listos para ejecutarse y su comportamiento no puede cambiarse. Esto es muy útil cuando tenemos un conjunto pequeño de datos con los que queremos hacer la prueba. Pero puede convertirse en un problema cuando tenemos un conjunto grande o dinámico de las mismas `@Test` tiene muchas limitaciones. 
 

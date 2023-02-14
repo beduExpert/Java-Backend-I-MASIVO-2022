@@ -8,6 +8,20 @@
 
 El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
 
+En esta sesión aprendimos qué es Gradle y cómo podemos utilizarlo para automatizar procesos como compilación y ejecución de proyectos. Una parte fundamental son los plugins que nos ayudarán a extender el potencial de Gradle en nuestros proyectos.
+
+Recuerda que todo lo trabajado en tu prework, así como durante la sesión, puede ser aplicado a tu proyecto personal. 
+
+El postwork se realizará en equipo, los cuales serán formados previamente por el maestro del curso.
+
+**Asegúrate de comprender:**
+
+1. Cómo crear un archivo de configuración de Gradle
+2. Cómo agregar plugins a un proyecto
+3. Cómo utilizar librerías externas en Java
+
+**Indicaciones generales**
+
 ¿Conoces lo que es Markdown? Si no es así ¡no te preocupes! En el siguiente [enlace](https://programmerclick.com/article/13741359806/) encontrarás una explicación bastante clara pero en resumen, es un lenguaje de marcado que permite enriquecer textos planos de una manera simple y es muy utilizado en Git para crear documentación o el famoso archivo llamado README.md.
 
 La misión es transformar este [ejemplo](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html) de Markdown en HTML a través de Gradle usando [Gradle Markdown Plugin](https://github.com/kordamp/markdown-gradle-plugin).

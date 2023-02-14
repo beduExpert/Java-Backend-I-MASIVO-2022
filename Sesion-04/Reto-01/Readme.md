@@ -137,4 +137,4 @@ Haz clic en la opción *Create a basic request*. En la siguiente ventana coloca 
 
 <br>
 
-[**`Siguiente`** -> ejemplo 02](../Ejemplo-03/)
+[**`Siguiente`** -> ejemplo 03](../Ejemplo-03/)

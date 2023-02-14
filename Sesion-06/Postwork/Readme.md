@@ -2,15 +2,31 @@
 
 ### OBJETIVO
 
-- Extender el programa de línea de comandos para utilizar un controlador Web.
+- Reemplazar la aplicación de línea de comandos por un API Rest que reciba la información de nombre y teléfono.
+- Tener un almacenamiento temporal de la información en la memoria.
+- Desarrollar un Endpoint que regrese la información almacenada en la agenda.
+
 
 ### DESARROLLO
 
+En esta sesión aprendimos MVC como estilo arquitectónico para nuestras aplicaciones. Ahora lo usaremos para dejar atrás la línea de comandos y realizar el desarrollo de un API Rest que nos ayude con el manejo de nuestra agenda telefónica.
+
 El postwork se realizará en equipo, los cuales serán formados previamente a la sesión uno.
 
-En el Postwork de la sesión anterior implementamos una aplicación que recibe el nombre y teléfono de una persona y realiza una validación y limpieza sobre el número de teléfono. En esta ocasión tu misión será extender este programa eliminando la línea de comandos y sustituyéndolo por un controlador web el cual además de recibir la información de la persona a través de un servicio REST, deberá de: 
+**Asegúrate de comprender:**
 
-1. Reciba la información del nombre y número de teléfono en el cuerpo de la petición de un servicio **POST** y aplique el mismo proceso de validación y limpieza del teléfono que desarrollamos en el módulo anterior
+1. Cómo utilizar el Spring Initializr para crear un proyecto
+2. Cómo configurar un proyecto de Gradle
+3. Cómo crear un controlador REST en Spring MVC.
+4. Cómo utilizar la Inyección de Dependencias en Spring Boot
+
+**Indicaciones generales**
+
+En el Postwork de la sesión anterior continuamos con la implementación de nuestra agenda, recibiendo y formateando el nombre y número de teléfono de una persona.
+
+En ésta ocasión tu misión será eliminar el uso de la línea de comandos y reemplazarlo por un API Rest que contenga las siguientes funcionalidades.
+
+1. Reciba la información del nombre y número de teléfono y aplique el mismo proceso de validación y limpieza del teléfono que desarrollamos en el módulo anterior.
 1. Almacene la información en memoria usando un `Set` de Java que ordene las entradas de forma alfabética por el nombre de la persona. Para lograr esto `Persona` deberá implementar la interface `java.lang.Comparable`
 1. Un servicio REST que al hacer una petición **GET** regrese la información de la agenda en formato JSON.
 1. La aplicación debe implementar el patrón MVC. Esto quiere decir que el modelo se encontrará en una capa, el acceso a datos en otra capa y la vista (los servicios Rest) en otra capa. Es posible que para esto debas crear más de un nuevo paquete en la aplicación. 

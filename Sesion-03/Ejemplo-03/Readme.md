@@ -156,6 +156,4 @@ Debes ver el siguiente resultado en la consola del IDE:
 
 [**`Siguiente`** -> postwork](../Postwork/)
 
-[**`Siguiente`** -> sesión 04](../../Sesion-04/)
-
 [**`Regresar`**](../)

@@ -35,6 +35,4 @@ El resultado final debe verse así:
 
 [**`Siguiente`** -> postwork](../Postwork/)
 
-[**`Siguiente`** -> sesión 08](../../Sesion-08/)
-
 [**`Regresar`**](../)
