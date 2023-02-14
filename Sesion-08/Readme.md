@@ -1,4 +1,4 @@
-## Sesi�n 8: Conexi�n a base de datos con Spring Data
+## Sesión 8: Conexión a base de datos con Spring Data
 
 <img src="img/01.jpg" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
