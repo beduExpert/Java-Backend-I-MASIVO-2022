@@ -1,4 +1,4 @@
-## Sesi�n 6: Patr�n MVC con Spring Boot
+## Sesión 6: Patrón MVC con Spring Boot
 
 <img src="./img/01.png" align="right" height="100" hspace="10">
 <div style="text-align: justify;">
