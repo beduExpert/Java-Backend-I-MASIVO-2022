@@ -92,10 +92,10 @@ public class Application {
         return counter - 1;
       }
     }
-    ```
+  ```
 
-    ```java
-    public class MultiplyBy2Command implements Command {
+  ```java
+  public class MultiplyBy2Command implements Command {
 
     public int execute(int counter) {
       return counter * 2;
