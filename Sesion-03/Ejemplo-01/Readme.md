@@ -31,6 +31,17 @@ JUnit 5 está compuesto por una variedad de módulos diferentes divididos en tre
 Lo primero que debemos hacer es incluir la dependencia de JUnit en nuestro proyecto. Esto lo hacemos colocando la siguiente línea en el archivo `build.gradle`, las cuales indican que debemos usar la dependencia de Junit Jupiter solo en la etapa de pruebas:
 
 ```groovy
+plugins {
+    id 'java'
+}
+
+group 'org.bedu.java.backend.sesion3'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
@@ -39,7 +50,6 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
 ```
 
 Ahora creamos una clase que contenga la siguiente lógica de sumas y restas.
